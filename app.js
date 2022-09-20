@@ -47,3 +47,4 @@ console.log(typeof symbol)
 
 let test
 console.log(test)
+console.log(typeof test)
