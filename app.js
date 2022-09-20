@@ -1,7 +1,16 @@
-// variables
-    // let
+//data types
+// String
+
     let name = "Robin Noormets"
 
+let goodmark = "5"
+console.log (goodmark)
+console.log(typeof goodmark)
+
+let percent = 50.3
+console.log(percent)
+console.log(typeof percent)
+/*
     // const
     const surname = "Noormets"
     // arrays
@@ -20,4 +29,21 @@ console.log(person)
 console.log(person.firstname)
 console.log(person.surname)
 person.department = "IKT"
-console.log(person)
+console.log(person)*/
+
+// Null
+
+const airplane = null
+console.log(airplane)
+console.log(typeof airplane)
+
+// Symbol
+
+const symbol = Symbol()
+console.log(symbol)
+console.log(typeof symbol)
+
+// undefined
+
+let test
+console.log(test)
