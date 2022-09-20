@@ -1,50 +1,27 @@
-//data types
-// String
+let val
 
-    let name = "Robin Noormets"
+console.log(555)
+val = String(555)
+console.log(val)
+val = String(6+4)
+console.log(val)
+val = String(5.4)
+console.log(val)
 
-let goodmark = "5"
-console.log (goodmark)
-console.log(typeof goodmark)
+// Object -> String
+val = String(new Date())
+console.log(val)
 
-let percent = 50.3
-console.log(percent)
-console.log(typeof percent)
-/*
-    // const
-    const surname = "Noormets"
-    // arrays
-    const numbers = [1, 2, 3, 4, 5]
-    console.log(numbers)
-    numbers.push(6)
-    console.log(numbers)
+//toString()
+val = (true).toString()
+console.log(val)
 
-    // objects
-const person = {
-    firstname: "Robin",
-    surname : "Noormets"
-}
+// Bool -> Number
 
-console.log(person)
-console.log(person.firstname)
-console.log(person.surname)
-person.department = "IKT"
-console.log(person)*/
+val = Number(true)
+console.log(val)
 
-// Null
+// String -> Number
 
-const airplane = null
-console.log(airplane)
-console.log(typeof airplane)
-
-// Symbol
-
-const symbol = Symbol()
-console.log(symbol)
-console.log(typeof symbol)
-
-// undefined
-
-let test
-console.log(test)
-console.log(typeof test)
+val = Number("test")
+console.log(val)
