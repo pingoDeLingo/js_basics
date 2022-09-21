@@ -1,27 +1,22 @@
-let val
+const num1 = 50
+const num2 = 100
 
-console.log(555)
-val = String(555)
-console.log(val)
-val = String(6+4)
-console.log(val)
-val = String(5.4)
-console.log(val)
+let result
 
-// Object -> String
-val = String(new Date())
-console.log(val)
+result = num1- num2
+result = num1 * num2
+result = num1 / num2
+result = num1 % num2
 
-//toString()
-val = (true).toString()
-console.log(val)
+result = Math.PI
+result = Math.round(2.5)
+result = Math.ceil(2.0000001)
+console.log(result)
+result = Math.floor(2.99)
+console.log(result)
+result = Math.sqrt(121)
+result = Math.abs(-3)
+result = Math.pow(8, 2)
 
-// Bool -> Number
-
-val = Number(true)
-console.log(val)
-
-// String -> Number
-
-val = Number("test")
-console.log(val)
+result = Math.round(Math.random() * 10)
+console.log(result)
