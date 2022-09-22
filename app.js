@@ -1,29 +1,16 @@
-const person = {
-    firstName: "Kadi",
-    surName: "Ilves",
-    age: 40,
-    email: "kadiilves@gmail.com",
-    hobbies: ["tennis", "korvpall"],
-    address: { city: "Tallinn",
-    county: "Võrumaa",
-       number: 23
-    },
-    getBirthYear: function (){
-        return 2022 - this.age
-    }
-}
+const today = new Date()
 
 let val
-val = person.getBirthYear()
-val = person.hobbies[0]
+
+val = today
+val = today.getMonth() // 0 - jaanuar
+val = today.getDate()
+val = today.getFullYear()
+
+val = new Date("09/22/2021")
+val = new Date("September 23 2022")
+
+val = new Date()
+val.setDate(23)
+val.setFullYear(2023)
 console.log(val)
-
-/*
-for(let i = 0; i < person.hobbies.length; i++){
-     console.log(person.hobbies[i])
-*/
-
-person.hobbies.forEach((hobbie, index)=> {
-    console.log(hobbie)
-})
-
