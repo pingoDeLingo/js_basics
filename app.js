@@ -1,21 +1,29 @@
-const firstname = "Robin"
-const surname = "Noormets"
-const email = "robin.noormets@voco.ee"
-const department = "IKT"
+const person = {
+    firstName: "Kadi",
+    surName: "Ilves",
+    age: 40,
+    email: "kadiilves@gmail.com",
+    hobbies: ["tennis", "korvpall"],
+    address: { city: "Tallinn",
+    county: "Võrumaa",
+       number: 23
+    },
+    getBirthYear: function (){
+        return 2022 - this.age
+    }
+}
 
-let result = "<ul>" +
-    "<li><b>Name:</b> "+ firstname +" </li>" +
-    "<li> "+ surname +" </li>" +
-    "<li> "+ email +" </li>" +
-    "<li> "+ department +" </li>" +
-    "</ul>>"
+let val
+val = person.getBirthYear()
+val = person.hobbies[0]
+console.log(val)
 
-result = `<ul>
-   <li><b>Name: </b>${firstname}</li>
-   <li><b>Surname: </b>${surname}</li>
-   <li><b>Email: </b>${email}</li>
-   <li><b>Dept.: </b>${department}</li>
-</ul>`
+/*
+for(let i = 0; i < person.hobbies.length; i++){
+     console.log(person.hobbies[i])
+*/
 
-console.log(result)
-document.body.innerHTML = result
+person.hobbies.forEach((hobbie, index)=> {
+    console.log(hobbie)
+})
+
