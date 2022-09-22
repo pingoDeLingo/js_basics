@@ -48,7 +48,7 @@ console.log(id === 100 ? "Ok" : "Not")
 
 // switch
 
-const color = "go fuck yourself"
+const color = "green"
 
 switch (color) {
     case "red":
