@@ -1,32 +1,40 @@
-console.log("for loop")
-for ( let number = 0; number < 10; number++) {
-    if (number == 5) {
-        continue
-    }
-    console.log(number)
+/*function greeting(name){
+    // console.log(`Hello, ${name}!`)
+    return `Hello, ${name}!`
 }
 
-console.log("while loop")
-let number1 = 0;
-while(number1 < 10){
-    console.log(number1)
-    number1++
+ */
+/*
+greeting("Robin")
+let greet = greeting("Robin")
+console.log(greet)
+
+ */
+/*
+const square = function(number) {
+    return number * number
 }
 
-console.log("do-while loop")
-let number2 = 11;
-do {
-    console.log(number2)
-    number2++
-} while (number2 < 10)
+/*let result = square( 38)
+console.log(result)
 
-const cars = ["Audi", "Tesla", "BMW"]
-cars.forEach((car) => {
-    console.log(car)
-    })
+ */
+    (function(){
+    console.log('function is running')
+})();
 
-const person = {
-    firstname: "Kadi",
-    lastname: "Tamm",
-    age: 40
+(function(name) {
+    console.log(`Hello, ${name}`)
+})("Robin")
+
+const todo = {
+    add: function(){
+        console.log("add todo...")
+    },
+    edit: function(){
+        console.log("edit todo...")
+    },
+    delete: function(){
+        console.log("delete todo...")
+    },
 }
