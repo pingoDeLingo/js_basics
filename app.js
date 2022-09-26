@@ -1,65 +1,32 @@
-/*
-if(condition) {
-
-}
-else {
-
-}
-
-== equal => ===
-
-!= not equal => !==
-*/
-/*
-let personID = 354;
-
-if(personID === undefined){
-    console.log("Id is undefined")
-} else {
-    console.log('Id is good')
-}*/
-
-/*
-const color = "blue"
-
-if(color === "red"){
-    console.log("Stop!")
-} else if (color === "yellow") {
-    console.log("Yellow!??!?")
-} else {
-    console.log("Error")
-}*/
-
-const name = "Kadi"
-const age = 40
-
-if(age > 0 && age <=12){
-    console.log(`${name} on laps`)
-}else if(age > 12 && age <18){
-    console.log(`${name} on nooruk`)
-}else{
-    console.log(`${name} on surmale lähedal`)
+console.log("for loop")
+for ( let number = 0; number < 10; number++) {
+    if (number == 5) {
+        continue
+    }
+    console.log(number)
 }
 
-let id = 100
+console.log("while loop")
+let number1 = 0;
+while(number1 < 10){
+    console.log(number1)
+    number1++
+}
 
-// ? - ternary
-console.log(id === 100 ? "Ok" : "Not")
+console.log("do-while loop")
+let number2 = 11;
+do {
+    console.log(number2)
+    number2++
+} while (number2 < 10)
 
-// switch
+const cars = ["Audi", "Tesla", "BMW"]
+cars.forEach((car) => {
+    console.log(car)
+    })
 
-const color = "green"
-
-switch (color) {
-    case "red":
-        console.log("STOP")
-        break;
-    case "yellow":
-        console.log("Attention!")
-        break;
-    case "green":
-        console.log("Go!")
-        break;
-    default:
-        console.log("error")
+const person = {
+    firstname: "Kadi",
+    lastname: "Tamm",
+    age: 40
 }
