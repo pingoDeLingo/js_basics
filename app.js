@@ -1,34 +1,32 @@
 let val;
 
-val = document.getElementById('task')
-val = document.getElementById("task-title")
+const list = document.querySelector("ul")
+const listitem = document.querySelector("li")
 
-/*const taskTitle =
-    document.getElementById("task-title")
-taskTitle.style.backgroundColor = "#333"
-taskTitle.style.color = "#fff"
-taskTitle.style.padding = "10px"
+/*console.log(listitem)*/
 
-taskTitle.textContent = "Defined Tasks"
-taskTitle.innerText = "My Favorite Tasks"
-taskTitle.innerHTML = "<b style='color: tomato'>My tasks</b>"
-console.log(taskTitle)*/
+val = list
+val = list.childNodes
+val = list.childNodes[1]
+val = list.childNodes[1].nodeName
+val = list.childNodes[1].nodeType
 
-val = document.querySelector(".card-title")
-val = document.querySelector("ul")
-/*const task = document.querySelector("li")
-task.style.color = "red"*/
-val = document.querySelector("li:first-child")
-document.querySelector("li:nth-child(odd)").style.backgroundColor = "#ccc"
-document.querySelector("li:nth-child(even)").style.backgroundColor = "#f4f4f4"
+val = list.children
+val = list.children[1].children
 
-// Multiply elements
+val = list.firstChild
+val = list.firstElementChild
 
-val = document.querySelectorAll("li")
-oddList = document.querySelectorAll("li:nth-child(odd)")
+val = list.lastChild
+val = list.lastElementChild
 
-oddList.forEach((li) => {
-    li.style.background = "green"
-})
+val = list.childElementCount
 
+val = listitem.parentNode
+val = listitem.parentElement
+val = listitem.parentElement.parentElement
+
+val = listitem.nextSibling
+val = listitem.nextElementSibling
+val = listitem.nextElementSibling.nextElementSibling.previousElementSibling
 console.log(val)
